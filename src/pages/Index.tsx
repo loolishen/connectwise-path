@@ -43,6 +43,9 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Services Carousel Section */}
+      <ServicesCarousel />
+
       {/* Discover Section */}
       <section className="py-20">
         <div className="container mx-auto">
