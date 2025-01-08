@@ -10,19 +10,22 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section with Search */}
-      <section className="relative min-h-[80vh] flex items-center px-4 bg-[url('/lovable-uploads/ac9e048d-b3e9-45e3-8e7f-6d59ce00498e.png')] bg-cover bg-center">
-        <div className="absolute inset-0 bg-gradient-to-r from-white/90 to-white/50" />
+      <section className="relative min-h-[80vh] flex items-center px-4 bg-gradient-to-br from-blue-50 to-white">
+        <div className="absolute inset-0 opacity-[0.15] bg-[radial-gradient(#3b82f6_1px,transparent_1px)] [background-size:16px_16px]" />
         <div className="container mx-auto relative z-10">
           <div className="max-w-2xl mx-auto text-center">
             <h1 className="text-4xl lg:text-6xl font-bold mb-6 text-blue-600 animate-fade-down">
-              Find the best professional
-              <br /> for you.
+              Connect with Expert
+              <br /> Service Providers
             </h1>
+            <p className="text-lg text-gray-600 mb-8 animate-fade-up">
+              Find trusted professionals for your business needs
+            </p>
             <div className="flex gap-2 max-w-xl mx-auto animate-fade-up">
               <div className="relative flex-1">
                 <Input 
                   type="text" 
-                  placeholder="What do you need help with?"
+                  placeholder="What service are you looking for?"
                   className="w-full pl-12 h-12 text-lg"
                 />
                 <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 h-5 w-5" />
@@ -30,6 +33,11 @@ const Index = () => {
               <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
                 Search
               </Button>
+            </div>
+            <div className="mt-8 flex items-center justify-center gap-8 text-sm text-gray-500">
+              <span>✓ Verified Providers</span>
+              <span>✓ Secure Platform</span>
+              <span>✓ 24/7 Support</span>
             </div>
           </div>
         </div>
